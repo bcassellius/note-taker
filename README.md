@@ -18,7 +18,7 @@ This is an app that allows the user to create, save, and delete notes.
 
 <a name='installation'></a>
 ## Installation
-This app requires the installation and use of express and nonoid.
+This app can simply be run from the internet.  To use this app on your local computer, you can clone the repository.  This app requires the installation and use of express, node, and nanoid to run correctly.
 
 <a name='usage'></a>
 ## Usage
