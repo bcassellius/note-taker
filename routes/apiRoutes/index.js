@@ -1,26 +1,32 @@
 const router = require('express').Router();
-const { notes } = require('../../db/db.json');
-const { createNewNote } = require('../../lib/notes');
+let notes = require('../../db/db.json');
+const {newNote, deleteNote} = require('../../lib/notes');
+const { nanoid } = require('nanoid')
 
 // GET /api/notes should read the db.json file and return all saved notes as JSON.
-router.get('/api/notes', (req, res) => {
-    let results = db;
+router.get('/notes', (req, res) => {
+    let results = notes;
     console.log(results)
     res.json(results);
 });
 
-// POST /api/notes should receive a new note to save on the request body, 
-// add it to the db.json file, and then return the new note to the client. 
-// You'll need to find a way to give each note a unique id when it's saved 
-// (look into npm packages that could do this for you).
-//  npm i nanoid
-
+router.delete('/notes/:id', (req, res) => {
+    notes = deleteNote(req.params.id, notes);
+    res.json({ok: true});
+})
 
 router.post('/notes', (req, res) =>{
     // req.body to save incoming content
     console.log(req.body);
-    // add note to jon file
-    const note = createNewNote(req.body, notes);
+
+    let note = {
+        id: nanoid(),
+        title: req.body.title,
+        text: req.body.text
+    }
+
+    // add note to json file
+    note = newNote(note, notes);
     res.json(note);
 })
 
