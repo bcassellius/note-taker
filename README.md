@@ -24,15 +24,20 @@ This app requires the installation and use of express and nonoid.
 ## Usage
 To use this app, open the website https://secure-earth-84273.herokuapp.com/ <br>
 Click on get started.
+![image](https://user-images.githubusercontent.com/83994997/129393163-47886fe8-5510-49d8-b8a7-5fb45ec64d6b.png)
 
 <br>
-On the right-hand column, type the title of your note and the text of your note. Once both fields are filled in, a save icon will display in the right hand horner.  Click save to keep the note in your list.
+On the right-hand column, type the title of your note and the text of your note. Once both fields are filled in, a save icon will display in the right hand corner.  ![image](https://user-images.githubusercontent.com/83994997/129393318-6bd0349b-048c-41c1-844e-cbc2ba109164.png)
+Click save to keep the note in your list.
+![image](https://user-images.githubusercontent.com/83994997/129393221-5965041b-f338-4316-aaa1-8d1958bc0612.png)
 
 <br>
-On the left-hand column, a list of notes you have created will be displayed. 
-* Click on the title of the note to see the note display in the right-hand column. 
-* Click on the trash can to delete the note.
-* Click on the plus sign to create a new note.
+On the left-hand column, a list of notes you have created will be displayed.<br> 
+- Click on the title of the note to see the note display in the right-hand column.<br> 
+- Click on the trash can to delete the note.<br>
+- Click on the plus sign to create a new note.<br>
+- ![image](https://user-images.githubusercontent.com/83994997/129393478-97d38c99-f274-476f-ade5-f2daf635c2a9.png)
+
 
 <a name='license'></a>
 ## License
@@ -40,7 +45,7 @@ This application is covered by MIT.
 
 <a name='contributing'></a>
 ## Contributing
-Bri Cassellius created this app using starter code provided by Xan
+Bri Cassellius created this app using starter code provided by Xandromus at https://github.com/coding-boot-camp/miniature-eureka.git.
 
 <a name='github'></a>
 ## Github
